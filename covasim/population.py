@@ -81,6 +81,24 @@ def make_people(sim, popdict=None, save_pop=False, popfile=None, die=True, reset
             errormsg = f'Population type "{pop_type}" not found; choices are random, clustered, hybrid, or synthpops'
             raise ValueError(errormsg)
 
+     if no reset:
+           for sim.people 
+           return 
+           for sim.popdict
+           si
+     elif popdict is None:
+           
+
+
+
+
+
+
+
+
+
+
+
     # Ensure prognoses are set
     if sim['prognoses'] is None:
         sim['prognoses'] = cvpar.get_prognoses(sim['prog_by_age'], version=sim._default_ver)
@@ -151,7 +169,8 @@ def make_randpop(sim, use_age_data=True, use_household_data=True, sex_ratio=0.5,
             except ValueError as E:
                 if sim['verbose']>=2: # These don't exist for many locations, so skip the warning by default
                     print(f'Could not load household size data for requested location "{location}" ({str(E)}), using default')
-
+           
+           
     # Handle sexes and ages
     uids           = np.arange(pop_size, dtype=cvd.default_int)
     sexes          = np.random.binomial(1, sex_ratio, pop_size)
